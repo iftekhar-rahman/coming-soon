@@ -29,11 +29,15 @@ input[type="submit"], button[type="submit"] , button[type="button"]{
     cursor: pointer;
 }
 select {outline: none }
-
+.header-area {
+    background: #ddd;
+}
 .slicknav_menu {
     display: none;
 }
-
+html, body {
+    height: 100%;
+}
 .logo.d-table {
     height: 70px;
 }
@@ -61,8 +65,8 @@ select {outline: none }
 .mainmenu ul li:hover a {
     color: #FF3E2E;
 }
-.maincontent-area {
-    padding: 40px 0;
+.maincontent-area .d-table-cell {
+    vertical-align: middle;
 }
 .content-text {
     font-size: 28px;
@@ -71,7 +75,7 @@ select {outline: none }
     font-size: 56px;
 }
 .signup-form {
-    margin: 70px 0 100px;
+    margin: 70px 0 0px;
     font-size: 18px;
 }
 .signup-form h4 {
@@ -125,6 +129,24 @@ select {outline: none }
 }
 
 
+/* ========.video-section========== */
+.video-section video {
+    width: 220px;
+    height: 475px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+.video-section {
+    position: relative;
+}
+.video-section svg {
+    position: relative;
+    z-index: 3;
+}
 
 
 /* ========.modal-css============= */
