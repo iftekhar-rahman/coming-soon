@@ -1,0 +1,166 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,800,800i|Roboto:400,400i,700,700i');
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+a:hover { text-decoration: none }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], textarea {
+    
+}
+input[type="submit"], button[type="submit"] , button[type="button"]{
+    cursor: pointer;
+}
+select {outline: none }
+
+.slicknav_menu {
+    display: none;
+}
+
+.logo.d-table {
+    height: 70px;
+}
+.logo.d-table .d-table-cell {
+    vertical-align: middle;
+}
+.logo a {
+    display: block;
+    padding: 15px 0;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainmenu ul li {
+    display: inline-block;
+}
+.mainmenu ul li a {
+    display: inline-block;
+    padding: 23px 20px;
+    color: #000;
+    transition: .3s;
+}
+.mainmenu ul li:hover a {
+    color: #FF3E2E;
+}
+.maincontent-area {
+    padding: 40px 0;
+}
+.content-text {
+    font-size: 28px;
+}
+.content-text h1 {
+    font-size: 56px;
+}
+.signup-form {
+    margin: 70px 0 100px;
+    font-size: 18px;
+}
+.signup-form h4 {
+    font-size: 24px;
+    margin-bottom: 27px;
+}
+.signup-form input[type="email"] {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    width: 360px;
+    margin-bottom: 20px;
+}
+.signup-form button[type="submit"] {
+    background-color: #66AC16;
+    color: #fff;
+    border: 0;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.signup-form button[type="submit"]:hover{
+    background: #FF3E2E;
+}
+.signup-form i.fa {
+    color: #FF3E2E;
+}
+.footer-area {
+    padding: 25px 0;
+    background-color: #F5F5F5;
+}
+.footer-area p {
+    margin: 0;
+}
+.footer-area img {
+    margin-bottom: 27px;
+}
+.social-icons a {
+    color: #979797;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 0 20px 20px;
+}
+.languages button[type="button"] {
+    background: no-repeat;
+    border: 0;
+}
+
+
+
+
+/* ========.modal-css============= */
+.modal-wrap .modal-body{
+    padding: 35px 20px 60px;
+}
+.modal-wrap .modal-header {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 99999;
+    border: 0;
+}
+.about-text {
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+.m-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.m-list li {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.m-list li:last-child{
+    margin-bottom: 0;
+}
+.m-list li span {
+    margin-right: 10px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.about-text h2 {
+    margin-bottom: 25px;
+}
