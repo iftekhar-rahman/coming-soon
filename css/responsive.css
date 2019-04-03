@@ -300,7 +300,18 @@ a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(3) {
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.footer-area {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
 
 
 }
