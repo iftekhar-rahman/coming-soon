@@ -1,8 +1,11 @@
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+.header-area {
+    width: 50% !important;
+}
 .maincontent-area {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 350px;
 }
 .content-text h1 {
@@ -31,7 +34,7 @@
     position: absolute;
     left: 15px;
     top: 725px;
-    z-index: 99999999;
+    z-index: 9999;
     right: 15px;
 }
 
@@ -40,7 +43,7 @@
     display: block;
     background: #fff;
     padding: 22px 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -89,6 +92,34 @@
     background: #f4f4f4;
     color: #222;
 }
+
+
+a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+    position: relative;
+    transition: .3s;
+}
+a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(3) {
+    transform: rotate(45deg);
+    position: relative;
+    top: -9px;
+    transition: .3s;
+}
+/* .slk a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(1) {
+    top: 0px;
+}
+.slk a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(3) {
+    top: 0px;
+}
+.slk a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(3), .modal-open a.slicknav_btn.slicknav_open span.slicknav_icon-bar:nth-child(1) {
+    transform: rotate(0deg);
+} */
+
 
 
 .footer-area, .footer-area .text-right{
@@ -158,9 +189,6 @@
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) { 
-.maincontent-area {
-    padding: 70px 0;
-}
 .content-text h1 {
     font-size: 40px;
 }
@@ -182,6 +210,17 @@
 .video-section video {
     left: 21px;
 }
+.footer-area {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.maincontent-area {
+    padding-top: 70px !important;
+    padding-bottom: 126px;
+}
+
 
 
 }
@@ -208,7 +247,17 @@
     border-radius: 5px;
 }
     
-
+.header-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999999999;
+    background: #fff;
+}
+.maincontent-area {
+    padding-top: 110px;
+}
 
 /* .header-area .col-auto {
     position: absolute;
@@ -222,9 +271,6 @@
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) { 
-.maincontent-area {
-    padding: 20px 0;
-}
 .content-text h1 {
     font-size: 40px;
 }

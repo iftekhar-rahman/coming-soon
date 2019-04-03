@@ -29,8 +29,16 @@ input[type="submit"], button[type="submit"] , button[type="button"]{
     cursor: pointer;
 }
 select {outline: none }
+
+ul.slicknav_nav.slicknav_hidden {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ===========.header-area================== */
 .header-area {
-    background: #ddd;
+    /* background: #ddd; */
 }
 .slicknav_menu {
     display: none;
@@ -48,6 +56,8 @@ html, body {
     display: block;
     padding: 15px 0;
 }
+
+/* ========mainmenu=========== */
 .mainmenu ul {
     margin: 0;
     padding: 0;
@@ -107,6 +117,8 @@ html, body {
 .signup-form i.fa {
     color: #FF3E2E;
 }
+
+/* ==========.footer-area============ */
 .footer-area {
     padding: 25px 0;
     background-color: #F5F5F5;
@@ -150,6 +162,12 @@ html, body {
 
 
 /* ========.modal-css============= */
+.modal-wrap .modal {
+    z-index: 999999999999999999;
+}
+.modal-content{
+    border: 0;
+}
 .modal-wrap .modal-body{
     padding: 35px 20px 60px;
 }
